@@ -1,0 +1,159 @@
+body{
+    /*cor de fundo*/
+    background-color: rgb(205, 156, 252);
+    background-image: url(https://wallpapercave.com/wp/wp6125905.jpg);
+    background-size: cover;
+    /* cor da letra*/ 
+    color: black;
+    /* alimhamento de texto*/
+     text-align: center;
+     /*trocando a fonte */
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+     margin: auto;
+     margin: 0px; 
+     padding: 0px;
+}
+
+section {
+    /*cor de fundo*/
+    background-color:rgb(215, 232, 247);
+    width: 600px;
+    /*centralizar card*/
+    margin: auto;
+
+   /*arrendodar bordas*/
+   border-radius: 20px;
+   /*espçamento interno*/
+   padding: 20px;
+   /*espaço externo*/
+   margin-bottom: 15px;
+  /*sombra*/
+  box-shadow: 2px 2px 10px rgba(248, 243, 244, 0.705);        
+  padding-bottom: 10px;
+}
+
+  section:hover {
+     /*corde fundo*/
+     background-color: floralwhite;
+     /*tempo de tramsição*/
+     transition:1s;
+     /*tamanho da fonte - aumentar*/
+     font-size: 17px;
+  }
+ ul{ 
+    /*estilo de lista desativado*/
+    list-style: none;
+    /*alinhar texto a esquerda*/
+    text-align: left;
+ }
+  
+   #perfil1{
+    width: 200;
+    border-radius: 15px;
+    border: 2px; color: gray;
+   }
+     
+  #perfil2{
+    width: 200;
+    border-radius: 15px;
+    filter:grayscale(50%);
+  }
+
+.links1{
+  /*decoração de texto desativada*/
+   text-decoration: none; 
+   color: rgb(0, 0, 0); 
+   } 
+.links2{
+  /*decoração de texto desativda*/
+  text-decoration: none;
+  color: blueviolet;
+}
+.links3{
+  /*decoraçaõ de texto desativada*/
+  text-decoration: none;
+  color: chocolate;
+  }  
+.links4{
+  /*decoração de texto desativada*/
+  text-decoration: none; 
+  color: darkmagenta;
+}
+.links5{
+  /*decoração de texto desativada*/
+  text-decoration: none;
+  color: rgb(36, 122, 75);
+}
+
+.links1:hover, .links2:hover, .links3:hover, .links4:hover, .links5:hover{
+   font-weight: bold;
+} 
+
+.menu{
+  /*cor de fundo*/
+     background-color: rgba(103, 45, 136, 0.74); 
+     /*alinhamento de texto*/
+     text-align: left; 
+     /*espaçamento interno*/
+     padding: 10px;
+     /*cor da letra*/ 
+     color: antiquewhite; 
+     /*margem abaixo*/ 
+     margin-bottom: 15px;
+     display: flex; 
+     gap: 10px; 
+     justify-content: center; /*flex-start flex-end center space-between space-around space-evenly;*/
+    align-items: center;
+}  
+
+     .menu ul{
+      margin: 0px;
+     } 
+
+     .menu ul li{ 
+  /*colocar em linha lado a lado*/
+  display: inline-block;
+  padding: 10px; 
+
+} 
+.menu ul li a{ 
+   /*cor da letra*/
+   color: antiquewhite; 
+   /*desativar traço em baixo*/ 
+   text-decoration: none; 
+    
+} 
+     
+footer{
+    background-color: rgba(125, 98, 223, 0.73);
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    padding: 40px;
+    box-shadow: 2px 2px 10px rgb(245, 115, 217);
+} 
+.celular{
+  display:none; 
+  } 
+
+  /*configuração de css para celular/tablet*/
+ @media(max-width: 1050px){ 
+        .celular{ 
+          /* aparece o menu de celular*/
+      display: block;
+    } 
+        .menu ul { 
+        /* desaparecer a lista do menu*/
+      display: none;
+    } 
+      
+       ul.mostrarMenu{ 
+        /*aparecer a lista do menu*/
+        display: inline-block; 
+      }
+    .menu ul li{
+      width: 100%;
+      border: 1px solid rgb(231, 185, 185);
+      margin: 3px; 
+      border-radius: 10px;
+    }  
+ }
